@@ -1,1 +1,14 @@
-k8242/java_starter:  daemon to spawn processes on demand
+//k8242/java_starter:  daemon to spawn processes on demand
+//Hello program, to remind you you're over the hill
+public class Hello {
+   public static void main(String[] args) {
+       String name = args[0];
+       int age = Integer.parseInt(args[1]);
+       if(args.length != 2) {
+           System.out.println("Usage: Hello name age");
+           System.exit(1);
+       }
+       System.out.println("Hello " + name + ". You are "
+                           + age + " years old.");
+   }
+}
